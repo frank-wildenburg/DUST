@@ -5,6 +5,6 @@ This work is the result of my master's thesis, "Investigations into Semantic Und
 
 The code is presented in notebooks, with code divided by purpose. In practice, I used the Snellius cluster, which often saw me run code multiple times with small adjustments. For this reason, the code occasionally needs to be changed - in these cases, I have left commented code you might need to add/delete
 
-Code for the probing tasks is adapted from code by Jaap Jumelet and Jelle Zuidema used for the course Interpretability & Explanability in AI
+Code for the probing tasks is adapted from code by Jaap Jumelet and Jelle Zuidema used for the course Interpretability & Explanability in AI given at the University of Amsterdam in 2022
 
 
