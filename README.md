@@ -20,6 +20,8 @@ The dataset contains minimal pairs of sentences, where one sentence is _semantic
   * Fused heads
   * Implicit references
   * Metonymic references
+ 
+ The dataset also include an attempt at creating sentence pairs containing neither syntactically nor semantically heterogeneous expressions, labeled ``type`` 4. These do not consist of minimal pairs, and are not used in the main analysis of our paper.
 
 ## Data format
 In the data of the sanity check, each row contains the perplexities of a sentence pair. These are contained in columns named ``{model} {order} perplexity``, where:
