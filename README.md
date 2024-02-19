@@ -32,6 +32,7 @@ In the data of experiment 1, each row contains an ``underspecified sentence`` an
 * The model can be ``GPT2-xl``, ``Flan-T5`` (xxl), ``Llama2`` (7B), ``OPT-13b``, or ``Mistral``
 * The prompt can be ``under-over``, ``(un)ambigu``, ``little/lot detail``, or ``little/lot information``
 * The prompt order can be one of ``uuoo``, ``oouu``, ``uoou`` or ``ouuo``.
+
 For more detail on what these things mean, see our paper
 
 In the data of experiment 2, each row contains an ``underspecified sentence``, two more specified control sentences ``control sentence 1`` and ``control sentence 2``, and two continuations ``continuation of control sentence 1`` and ``continuation of control sentence 2``. For each of these sentences, we note its ``type`` of underspecification and the ``phenomenon`` the underspecified sentence contains (the dataset is always "LAVA", so we do not note it). Then, the dataset contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {reading} {prompt} {sentence}_{continuation}``:
@@ -40,6 +41,8 @@ In the data of experiment 2, each row contains an ``underspecified sentence``, t
 * The prompt can be ``base``, ``thatis`` or ``more-likely``
 * The sentence can be ``sen`` (underspecified sentence) or ``csen`` (control sentence)
 * The continuation can be ``correct`` or ``incorrect``
+
+For more detail on what these things mean, see our paper
 
 ## License
 DUST is a non-commercial dataset which, like all of its component datasets, is intended for research purposes. We have also provided attribution to the creators of the component datasets, allowing it to be released in accordance with all of the licensing terms of these component datasets. Owing to the WikiHow data contained within, we also release DUST with a CC BY-NC-SA license.
