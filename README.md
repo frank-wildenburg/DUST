@@ -2,7 +2,7 @@
 **D**ataset of semantically **U**nderspecified **S**entences by **T**ype (DUST) as described and used in _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? _Ask the DUST!__
 
 ## Creation Context
-This is the dataset used in our paper _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? _Ask the DUST!__. The authors of this paper are Frank Wildenburg, Michael Hanna and Sandro Pezzelle. The dataset contains sentence pairs of underspecified and more specified sentences, grouped by their type of underspecification. The sentences originate from other datasets containing ambiguity and underspecification, including [CLAIRE](https://github.com/acidann/claire), [LAVA](https://web.mit.edu/lavacorpus/) and [WSC](https://huggingface.co/datasets/winograd_wsc)
+This is the dataset used in our paper _Do Pre-Trained Language Models Detect and Understand Semantic Underspecification? Ask the DUST!_. The authors of this paper are Frank Wildenburg, Michael Hanna and Sandro Pezzelle. The dataset contains sentence pairs of underspecified and more specified sentences, grouped by their type of underspecification. The sentences originate from other datasets containing ambiguity and underspecification, including [CLAIRE](https://github.com/acidann/claire), [LAVA](https://web.mit.edu/lavacorpus/) and [WSC](https://huggingface.co/datasets/winograd_wsc)
 
 ## Data
 The dataset contains minimal pairs of sentences, where one sentence is _semantically underspecified_, and the other is not. The data is grouped by the type of semantic underspecification, as well as labeled with the phenomenon of underspecification it contains. These are:
