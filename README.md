@@ -28,14 +28,14 @@ In the data of the sanity check, each row contains the perplexities of a sentenc
 * The model can be one of ``GPT2`` (xl), ``FlanT5`` (xxl), ``OPT`` (13B), ``Mistral``, ``Llama2-7b`` or ``Llama2-13b`` (only in the second experiment)
 * The order is one of ``ppnn``, ``nnpp``, ``pnnp`` or ``nppn``
 
-In the data of experiment 1, each row contains an ``underspecified sentence`` and a more specified ``control sentence``. For each of these sentences, we note its ``type`` of underspecification, the ``phenomenon`` the underspecified sentence contains, and the ``dataset`` it originates from. Then, the results of this experiment contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {prompt} {prompt order} perplexity``:
+In the data of experiment 1, each row contains an ``underspecified sentence`` and a more specified ``control sentence``. For each of these sentences, we note its ``type`` of underspecification, the ``phenomenon`` the underspecified sentence contains, and the ``dataset`` it originates from. Then, the results of this experiment contain the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {prompt} {prompt order} perplexity``:
 * The model can be ``GPT2-xl``, ``Flan-T5`` (xxl), ``Llama2`` (7B), ``OPT-13b``, or ``Mistral``
 * The prompt can be ``under-over``, ``(un)ambigu``, ``little/lot detail``, or ``little/lot information``
 * The prompt order can be one of ``uuoo``, ``oouu``, ``uoou`` or ``ouuo``.
 
 For more detail on what these things mean, see our paper
 
-In the data of experiment 2, each row contains an ``underspecified sentence``, two more specified control sentences ``control sentence 1`` and ``control sentence 2``, and two continuations ``continuation of control sentence 1`` and ``continuation of control sentence 2``. For each of these sentences, we note its ``type`` of underspecification and the ``phenomenon`` the underspecified sentence contains (the dataset is always "LAVA", so we do not note it). Then, the results of this experiment contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {reading} {prompt} {sentence}_{continuation}``:
+In the data of experiment 2, each row contains an ``underspecified sentence``, two more specified control sentences ``control sentence 1`` and ``control sentence 2``, and two continuations ``continuation of control sentence 1`` and ``continuation of control sentence 2``. For each of these sentences, we note its ``type`` of underspecification and the ``phenomenon`` the underspecified sentence contains (the dataset is always "LAVA", so we do not note it). Then, the results of this experiment contain the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {reading} {prompt} {sentence}_{continuation}``:
 * The model can be ``GPT2-xl``, ``Flan-T5 xxl``, ``Llama2-7b``, ``Llama2-13b``, ``OPT-13b``, or ``Mistral``
 * The reading can be "" or ``counter``
 * The prompt can be ``base``, ``thatis`` or ``more-likely``
