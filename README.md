@@ -35,7 +35,7 @@ In the data of experiment 1, each row contains an ``underspecified sentence`` an
 
 For more detail on what these things mean, see our paper
 
-In the data of experiment 2, each row contains an ``underspecified sentence``, two more specified control sentences ``control sentence 1`` and ``control sentence 2``, and two continuations ``continuation of control sentence 1`` and ``continuation of control sentence 2``. For each of these sentences, we note its ``type`` of underspecification and the ``phenomenon`` the underspecified sentence contains (the dataset is always "LAVA", so we do not note it). Then, the dataset contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {reading} {prompt} {sentence}_{continuation}``:
+In the data of experiment 2, each row contains an ``underspecified sentence``, two more specified control sentences ``control sentence 1`` and ``control sentence 2``, and two continuations ``continuation of control sentence 1`` and ``continuation of control sentence 2``. For each of these sentences, we note its ``type`` of underspecification and the ``phenomenon`` the underspecified sentence contains (the dataset is always "LAVA", so we do not note it). Then, the results of this experiment contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {reading} {prompt} {sentence}_{continuation}``:
 * The model can be ``GPT2-xl``, ``Flan-T5 xxl``, ``Llama2-7b``, ``Llama2-13b``, ``OPT-13b``, or ``Mistral``
 * The reading can be "" or ``counter``
 * The prompt can be ``base``, ``thatis`` or ``more-likely``
