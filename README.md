@@ -25,10 +25,10 @@ The dataset contains minimal pairs of sentences, where one sentence is _semantic
 
 ## Data format
 In the data of the sanity check, each row contains the perplexities of a sentence pair. These are contained in columns named ``{model} {order} perplexity``, where:
-* The model can be one of ``GPT2`` (xl), ``FlanT5`` (xxl), ``OPT`` (13B), ``Mistral`` or ``Llama2-13b``
+* The model can be one of ``GPT2`` (xl), ``FlanT5`` (xxl), ``OPT`` (13B), ``Mistral``, ``Llama2-7b`` or ``Llama2-13b`` (only in the second experiment)
 * The order is one of ``ppnn``, ``nnpp``, ``pnnp`` or ``nppn``
 
-In the data of experiment 1, each row contains an ``underspecified sentence`` and a more specified ``control sentence``. For each of these sentences, we note its ``type`` of underspecification, the ``phenomenon`` the underspecified sentence contains, and the ``dataset`` it originates from. Then, the dataset contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {prompt} {prompt order} perplexity``:
+In the data of experiment 1, each row contains an ``underspecified sentence`` and a more specified ``control sentence``. For each of these sentences, we note its ``type`` of underspecification, the ``phenomenon`` the underspecified sentence contains, and the ``dataset`` it originates from. Then, the results of this experiment contains the perplexities of these sentences for different variations of prompts, whose column name is ``{model} {prompt} {prompt order} perplexity``:
 * The model can be ``GPT2-xl``, ``Flan-T5`` (xxl), ``Llama2`` (7B), ``OPT-13b``, or ``Mistral``
 * The prompt can be ``under-over``, ``(un)ambigu``, ``little/lot detail``, or ``little/lot information``
 * The prompt order can be one of ``uuoo``, ``oouu``, ``uoou`` or ``ouuo``.
